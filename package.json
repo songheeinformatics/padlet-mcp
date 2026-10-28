@@ -1,0 +1,31 @@
+{
+  "name": "padlet-mcp",
+  "version": "1.0.0",
+  "description": "Padlet 보드를 Claude 등 MCP 클라이언트에서 자동으로 가져오는 MCP 서버 + CLI",
+  "type": "module",
+  "bin": {
+    "padlet-mcp": "src/server.js",
+    "padlet-export": "src/cli.js"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "node test/smoke.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "padlet",
+    "mcp",
+    "model-context-protocol",
+    "claude"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.6.7"
+  }
+}
