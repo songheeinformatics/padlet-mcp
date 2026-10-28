@@ -24,7 +24,7 @@ MCP 없이 터미널에서 Markdown 파일로 뽑아 주는 `padlet-export` 명�
   "mcpServers": {
     "padlet": {
       "command": "npx",
-      "args": ["-y", "github:OWNER/padlet-mcp"],
+      "args": ["-y", "github:songheeinformatics/padlet-mcp"],
       "env": {
         "PADLET_API_KEY": "pdltp_여기에_본인_키"
       }
@@ -36,12 +36,11 @@ MCP 없이 터미널에서 Markdown 파일로 뽑아 주는 `padlet-export` 명�
 3. Claude Desktop 을 완전히 종료했다가 다시 연다. 채팅창 도구 아이콘에 `padlet` 이 보이면 성공.
 4. 테스트: "패들렛 연결 확인해 줘" → `padlet_whoami` 가 본인 이름을 보여 주면 끝.
 
-> `OWNER` 는 이 저장소의 GitHub 계정 이름입니다. 저장소 주소가 `https://github.com/OWNER/padlet-mcp` 이면 그대로 쓰면 됩니다.
 
 ## Claude Code 에 연결
 
 ```bash
-claude mcp add padlet -e PADLET_API_KEY=pdltp_여기에_본인_키 -- npx -y github:OWNER/padlet-mcp
+claude mcp add padlet -e PADLET_API_KEY=pdltp_여기에_본인_키 -- npx -y github:songheeinformatics/padlet-mcp
 ```
 
 ## 제공하는 도구
@@ -61,7 +60,7 @@ Claude 에게 이렇게 말하면 됩니다.
 ## MCP 없이 쓰기 (터미널)
 
 ```bash
-git clone https://github.com/OWNER/padlet-mcp
+git clone https://github.com/songheeinformatics/padlet-mcp
 cd padlet-mcp
 npm install
 ```
